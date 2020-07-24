@@ -8,6 +8,12 @@ a {
   display: inline-block;
   text-decoration: none;
 }
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .left-stripe {
   font-size: 22px;
   line-height: 32px;

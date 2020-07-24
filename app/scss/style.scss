@@ -79,7 +79,13 @@
   &-item {
     position: relative;
   }
+  .slick-current {
+    .dots__box {
+      border-top: 4px solid $green;
+    }
+  }
 }
+
 .dots__box {
   display: flex;
   justify-content: space-between;
@@ -94,6 +100,99 @@
   }
   &-name {
     font-weight: 300;
+  }
+}
+.aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  border-right: 1px solid rgba(#ffffff, 0.25);
+  height: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+.aside__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  font-weight: 800;
+  font-size: 200px;
+  line-height: 156px;
+  text-transform: uppercase;
+
+  opacity: 0.07;
+  max-width: 467px;
+}
+.menu {
+  padding-top: 100px;
+  a {
+    color: #ffffff;
+    span {
+      display: block;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 3px;
+      padding-top: 6px;
+      margin-bottom: 30px;
+    }
+  }
+}
+.header__date {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 64px;
+  span {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    display: block;
+    margin-bottom: 30px;
+    padding-top: 15px;
+  }
+}
+.header__location {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  position: relative;
+  padding-left: 19px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 13px;
+    background-image: url("/img/marker.svg");
+    left: 0px;
+  }
+}
+.header__search {
+  padding: 38px 0 38px;
+}
+.header__map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+.header__arrows {
+  position: absolute;
+  bottom: 40px;
+  left: 210px;
+  z-index: 3;
+}
+.line-animation {
+  stroke-dashoffset: 600;
+  stroke-dasharray: 600;
+  animation: animline 5s infinite 6s;
+}
+@keyframes animline {
+  to {
+    stroke-dashoffset: 0;
   }
 }
 
