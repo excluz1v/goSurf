@@ -32,10 +32,11 @@ section {
   margin: 0 auto;
 }
 .left-title {
+  text-align: left;
   font-weight: 800;
   font-size: 80px;
   position: relative;
-  padding-left: 240px;
+  padding-left: 140px;
   display: inline-block;
 
   h3 {
@@ -47,7 +48,9 @@ section {
     top: 0;
   }
 }
-.left-stripe {
+.left-stripe,
+.right-stripe {
+  font-weight: normal;
   font-size: 22px;
   line-height: 32px;
   letter-spacing: 7.33333px;
@@ -65,30 +68,79 @@ section {
     display: inline-block;
     position: absolute;
     top: 50%;
+  }
+}
+.left-stripe {
+  &::before {
     left: 0;
   }
 }
 .right-stripe {
-  font-size: 22px;
-  line-height: 32px;
-  letter-spacing: 7.33333px;
-  text-transform: uppercase;
-  opacity: 0.5;
-  padding-right: 103px;
-  position: relative;
-  display: inline-block;
-  margin-bottom: 10px;
+  padding-left: 0;
+  padding-right: 30px;
   &::before {
-    content: "";
-    width: 80px;
-    height: 1px;
-    background-color: #ffffff;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    right: 0;
+    left: 100%;
   }
 }
 .shadow {
   opacity: 0.5;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.quantity {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+}
+.quantity input {
+  width: 45px;
+  height: 45px;
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+  font-weight: 800;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  position: static;
+  height: 42px;
+  order: 3;
+}
+
+.quantity-button {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 45px;
+  z-index: 3;
+}
+
+.quantity-button.quantity-up {
+  left: 70%;
+  position: absolute;
+}
+
+.quantity-button.quantity-down {
+  left: 60%;
+  position: absolute;
 }
