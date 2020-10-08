@@ -5,6 +5,8 @@ body {
   color: #ffffff;
   background-color: #171919;
   text-transform: uppercase;
+  overflow-x: hidden;
+  min-width: 320px;
 }
 html {
   box-sizing: border-box;
@@ -97,10 +99,8 @@ input[type="number"] {
 }
 .quantity {
   display: inline-block;
-  width: 100%;
-  position: absolute;
 }
-.quantity input {
+.nights {
   width: 45px;
   height: 45px;
   font-size: 40px;

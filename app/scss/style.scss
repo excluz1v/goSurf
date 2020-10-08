@@ -282,6 +282,9 @@
       width: 100%;
     }
   }
+  .slider-item__btn {
+    display: none;
+  }
 }
 .slider-item__title {
   font-weight: 800;
@@ -519,9 +522,13 @@
 .sleep__slider-item {
   background-image: url("../img/Sleep_slider.png");
 }
-.travel-btn {
+.slider-item__btn {
   display: block;
   position: static;
+  text-align: center;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 36px;
 }
 .travel-slider__info,
 .sleep-slider__info {
@@ -533,7 +540,7 @@
   position: relative;
   padding-left: 40px;
   height: 200px;
-  margin-right: 55px;
+  margin-right: 50px;
   width: 25%;
   &:last-child {
     margin-right: 0;
@@ -546,7 +553,6 @@
   order: 2;
   position: relative;
   letter-spacing: 6px;
-  padding-left: 50px;
   span:last-child {
     display: block;
     font-weight: normal;
@@ -554,9 +560,6 @@
     text-align: right;
     letter-spacing: 5.25px;
     opacity: 0.75;
-  }
-  &:first-child {
-    padding-left: 0;
   }
 }
 .slider__info-subtitle {
@@ -584,6 +587,7 @@
     background-repeat: no-repeat;
     background-position: center right;
     background-size: 1054px 590px;
+    padding-top: 40px;
     .left-title {
       padding-top: 65px;
     }
@@ -600,7 +604,7 @@
   &__slider-extras {
     display: flex;
     align-items: flex-end;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     width: 175px;
     margin-right: 25px;
   }

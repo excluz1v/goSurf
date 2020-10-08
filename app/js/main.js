@@ -32,9 +32,13 @@ $(function () {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 520,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    autoplay: true,
+                    autoplaySpeed: 6000,
+                    centerMode: true
+
                 }
             }
         ]
@@ -110,6 +114,7 @@ $(function () {
         });
 
     });
+    new WOW().init()
 
 });
 

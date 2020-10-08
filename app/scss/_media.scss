@@ -1,9 +1,12 @@
-@media (max-height: 1000px) {
-  .menu {
-    padding-top: 0;
+@media (max-width: 1500px) {
+  .shop__slider-card {
+    padding-left: 50px;
   }
 }
 @media (max-width: 1366px) {
+  section {
+    padding: 60px 0;
+  }
   .aside {
     display: flex;
     border-right: none;
@@ -44,6 +47,46 @@
   .surf__slider-item {
     min-height: 400px;
   }
+  .airplane {
+    background-size: 500px;
+    height: 200px;
+  }
+  .travel {
+    padding-bottom: 50px;
+    background-size: 250px;
+    background-position: bottom -65px right;
+  }
+  .travel-slider__info,
+  .sleep-slider__info {
+    padding: 0 40px;
+  }
+  .slider__info-item {
+    margin-right: 0;
+    padding-left: 25px;
+  }
+  .slider__info-title {
+    font-size: 35px;
+  }
+  .slider__info-subtitle {
+    font-size: 16px;
+  }
+  .slider-card__img {
+    margin-right: 0px;
+  }
+  .card__position2 + .slider-card__adv {
+    right: auto;
+    left: 30px;
+  }
+  .extras__box img {
+    margin: 0 auto;
+  }
+  .extras__box-title {
+    width: 100%;
+    text-align: center;
+  }
+  .shop__slider-extras {
+    justify-content: start;
+  }
 }
 @media (max-width: 1280px) {
   .header__map svg {
@@ -67,10 +110,34 @@
   .logo img {
     max-height: 190px;
   }
+  .shop__slider-extras {
+    margin-right: 0;
+  }
+  .shop__slider-card {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+  .slider-card__img img {
+    margin-right: 0;
+  }
 }
 @media (max-width: 1150px) {
   .header__arrows {
     display: none;
+  }
+  .travel {
+    background-size: 250px;
+  }
+  .slider__info-title {
+    font-size: 30px;
+  }
+  .slider__info-subtitle {
+    letter-spacing: 5px;
+  }
+  .left-title {
+    background-size: 300px;
+    background-position: center right;
+    padding-left: 100px;
   }
 }
 @media (max-width: 1040px) {
@@ -81,7 +148,6 @@
     top: auto;
     bottom: 250px;
   }
-
   .slider__item-info-link {
     display: none;
   }
@@ -151,6 +217,30 @@
       padding-top: 40px;
     }
   }
+  .travel {
+    background-size: 200px;
+  }
+  .slider__info-title {
+    letter-spacing: normal;
+  }
+  .sleep {
+    background-size: 125px;
+  }
+  .shop {
+    .top40 {
+      top: 110px;
+      bottom: auto;
+    }
+  }
+  .shop__slider-extras {
+    display: none;
+  }
+  .shop__slider-card {
+    padding-left: 100px;
+  }
+  .quantity-button.quantity-down {
+    left: 50%;
+  }
 }
 @media (max-width: 960px) {
   section {
@@ -184,12 +274,13 @@
   }
   .slider-item {
     &__wrapper {
-      min-height: 450px;
+      min-height: 400px;
     }
     &__sideText {
       transform: none;
       bottom: auto;
       top: 50%;
+      letter-spacing: 3px;
     }
   }
 
@@ -212,6 +303,33 @@
   .surf__slider .slick-slide:nth-child(4n + 1) .surf__slider-item {
     margin-top: 0;
   }
+  .slick-arrow img {
+    width: 20px;
+    height: 20px;
+  }
+  .slider__info-title {
+    font-size: 25px;
+  }
+  .slider__info-item {
+    margin-right: 20px;
+  }
+  .slick-prev,
+  .slick-next {
+    top: 140px;
+  }
+  .shop__slider-card {
+    padding: 0;
+  }
+  .slider-card__adv {
+    font-size: 20px;
+    line-height: 20px;
+    right: -105px;
+    width: 290px;
+    padding-left: 60px;
+    &::before {
+      width: 50px;
+    }
+  }
 }
 @media (max-width: 768px) {
   .header {
@@ -225,8 +343,159 @@
   .menu_burger {
     background-color: inherit;
   }
+  .slider-item__sideText {
+    letter-spacing: normal;
+  }
+  .slider-item__wrapper:hover .slider-item__btn {
+    font-size: 30px;
+  }
+  .slider-item__btn button {
+    height: 40px;
+  }
+  .slider-item__title {
+    width: auto;
+    font-size: 25px;
+  }
+  .slider-item__sideText {
+    font-size: 16px;
+  }
+  .left-stripe {
+    letter-spacing: 3px;
+  }
+  .surf-location {
+    font-size: 22px;
+  }
+  .right-stripe {
+    letter-spacing: 4px;
+  }
+  .travel {
+    padding: 0px 0 100px;
+    background-size: 150px;
+    background-position: bottom right;
+  }
+  .sleep {
+    background-size: 110px;
+    padding-top: 0;
+  }
+  .travel__slider-item,
+  .sleep__slider-item {
+    background-size: contain;
+    min-height: auto;
+  }
+  .slider-item__btn {
+    font-size: 35px;
+  }
+  .slider__info-item {
+    padding-left: 0px;
+    height: 175px;
+  }
+  .slider__info-title {
+    font-size: 16px;
+  }
+  .slider__info-subtitle {
+    letter-spacing: 1px;
+    bottom: 20px;
+    font-size: 12px;
+  }
+  .airplane,
+  .hammok {
+    padding-left: 40px;
+    background-size: 150px;
+    height: auto;
+    margin: 100px 0 30px;
+  }
+  .airplane-logo::after {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 40px;
+  }
+  .slider__info-title span:last-child {
+    letter-spacing: normal;
+    font-size: 10px;
+  }
+  .right-title {
+    height: auto;
+  }
+  .stars::after {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 120px;
+    right: auto;
+  }
+  .slick-prev,
+  .slick-next {
+    top: 100px;
+  }
+  .slider-card__adv {
+    font-size: 14px;
+    line-height: 16px;
+    right: -40px;
+    width: 100%;
+    padding-left: 60px;
+    top: 193px;
+  }
+  .card__position2 + .slider-card__adv {
+    top: 278px;
+  }
+  .card__position3 + .slider-card__adv {
+    top: 603px;
+  }
+  .quantity {
+    padding-left: 15px;
+  }
+  .card__position1 {
+    top: 125px;
+    right: 135px;
+  }
+  .card__position3 {
+    top: 430px;
+  }
+  .card__position3 + .slider-card__adv {
+    top: 415px;
+  }
+  .slider-card__adv {
+    top: 103px;
+  }
+  .slider-card__img img {
+    height: 500px;
+  }
+  .shop-btn {
+    padding-top: 0;
+  }
+  .shop .stars {
+    margin-top: 10px;
+    width: 130px;
+  }
+  .shop .surf-location {
+    width: 270px;
+  }
+  .footer {
+    padding: 20px 0 10px;
+  }
+  .footer__copy {
+    margin: 10px 0;
+  }
 }
+@media (max-width: 600px) {
+  .slider-card__img img {
+    height: 370px;
+  }
+  .slider-card__state,
+  .slider-card__adv {
+    display: none;
+  }
+  .shop .top40 {
+    top: 40px;
+  }
+}
+
 @media (max-width: 520px) {
+  section {
+    padding: 20px 0;
+  }
   .aside {
     display: block;
     &__title {
@@ -269,6 +538,185 @@
   .menu__list img {
     width: 40px;
     height: 40px;
+  }
+  .right-title {
+    height: auto;
+  }
+  .slider__info-item {
+    width: 50%;
+    margin-right: 0;
+    height: 140px;
+  }
+  .slider-item__sideText {
+    left: 40px;
+  }
+  .slider-item__wrapper {
+    min-height: 300px;
+  }
+  .surf__slider-item {
+    min-height: auto;
+  }
+  .left-stripe::before,
+  .right-stripe::before {
+    display: none;
+  }
+  .location::after {
+    display: none;
+  }
+  .top-line {
+    margin-bottom: 60px;
+    padding-left: 90px;
+  }
+  .left-title h3 {
+    font-size: 80px;
+  }
+  .travel {
+    padding-bottom: 50px;
+  }
+  .travel-slider__info,
+  .sleep-slider__info {
+    flex-wrap: wrap;
+  }
+  .travel__slider-item {
+    margin-bottom: 0;
+  }
+  .slider-item__btn {
+    font-size: 20px;
+  }
+  .airplane,
+  .hammok {
+    background-image: none;
+  }
+  .slider-item__title {
+    font-size: 20px;
+  }
+  .slider__info-subtitle {
+    position: static;
+    transform: none;
+    margin-right: 25px;
+    width: 30%;
+    text-align: left;
+  }
+  .slider__info-item {
+    height: auto;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .travel__slider-item {
+    min-height: auto;
+  }
+  .slider-item__wrapper:hover .slider-item__btn {
+    font-size: 16px;
+  }
+  .quantity {
+    display: block;
+    left: 10%;
+    position: relative;
+  }
+  .quantity-nav {
+    height: 20px;
+  }
+  .nights {
+    font-size: 25px;
+    height: 30px;
+  }
+  .quantity-button img {
+    width: 10px;
+  }
+  .quantity-button.quantity-up {
+    left: 55%;
+    top: 0;
+  }
+  .quantity-button.quantity-down {
+    left: 55%;
+    top: 25px;
+  }
+  .sleep {
+    background-size: 75px;
+    .slider__info-subtitle:nth-child(2),
+    .slider__info-subtitle:nth-child(3) {
+      display: none;
+    }
+    .slider__info-item {
+      display: flex;
+      &:nth-child(2),
+      &:nth-child(3) {
+        width: 50%;
+      }
+    }
+    .slider__info-item:last-child {
+      justify-content: center;
+    }
+    .quantity {
+      order: 3;
+    }
+  }
+  .sleep__slider-item {
+    margin-bottom: 0;
+  }
+  .shop__slider-card {
+    display: none;
+  }
+  .shop__slider-item .left-title {
+    padding-top: 0;
+  }
+  .left-title {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 420px) {
+  .surf-location {
+    font-size: 20px;
+  }
+  .left-stripe,
+  .right-stripe {
+    font-size: 18px;
+    letter-spacing: normal;
+  }
+  .left-title {
+    font-size: 30px;
+  }
+  .left-title h3 {
+    font-size: 50px;
+  }
+  .top-line {
+    padding-left: 50px;
+  }
+  .top-line {
+    margin-bottom: 20px;
+  }
+  .airplane {
+    height: auto;
+    margin-bottom: 25px;
+  }
+  .travel,
+  .sleep {
+    background-image: none;
+  }
+
+  .right-stripe {
+    margin-bottom: 0;
+  }
+  .slider__info-title {
+    font-size: 14px;
+  }
+
+  .slider__info-item {
+    margin-bottom: 15px;
+  }
+  .slider__info-subtitle {
+    letter-spacing: normal;
+  }
+  .slider-item__btn button {
+    height: 30px;
+  }
+  .slick-arrow {
+    display: none;
+  }
+}
+@media (max-height: 1000px) {
+  .menu {
+    padding-top: 0;
   }
 }
 @media (max-height: 720px) {
